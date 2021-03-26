@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang='en'>
+    
+<head>
+  <meta charset='UTF-8'>
+  <title>Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="team.html">Team</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="past.html">Past Years</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="registration.html">Registration</a>
+                </div>
+            </div>    
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>PGCTF21</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/grad1.jpg)"></div> 
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="images/grad1.jpg"> -->
+                        </div>
+                        
+                        <div class="subtitle">
+                            A cybersecurity competition for highschool students, by highschool students
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/grad2.jpg)"></div> 
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="images/grad1.jpg"> -->
+                        </div>
+                        
+                        <div class="subtitle">
+                            Now in its fifth year, PGCTF is looking to a bigger and brighter future
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/grad3.jpg)"></div> 
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="images/grad1.jpg"> -->
+                        </div>
+                        
+                        <div class="subtitle">
+                            At its core, PGCTF is an educational experience and welcomes all levels of knowledge
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/grad4.jpg)"></div> 
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="images/grad1.jpg"> -->
+                        </div>
+                        
+                        <div class="subtitle">
+                            Hosted at and by Porter-Gaud School in Charleston, SC
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/grad5.jpg)"></div> 
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="images/grad1.jpg"> -->
+                        </div>
+                            
+                        <div class="subtitle">
+                            CTF problems collaboratively designed by Porter-Gaud, Georgia Tech, and Clemson students 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/grad6.jpg)"></div> 
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="images/grad1.jpg"> -->
+                        </div>
+                        
+                        <div class="subtitle">
+                            Problems ranging from cryptography to networking so that everyone will find an interest
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+    
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+    
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        
+            portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+    
+    });
+    });
+
+</script>
+    
+</html>
